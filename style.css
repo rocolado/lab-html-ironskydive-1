@@ -17,6 +17,10 @@ p {
     margin: 0px;
 }
 
+ul {
+    list-style: none;
+}
+
 
 /* encabezados */
 
@@ -42,6 +46,7 @@ h2 {
     text-shadow: #020819 8px -20px 9px;
     text-transform: uppercase;
     line-height: 4em;
+    margin: 0px;
 }
 
 h3 {
@@ -67,8 +72,15 @@ h5 {
     background-color: rgb(25, 33, 41);
 }
 
+.nav-bar ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+}
+
 .nav-bar a {
     font-size: 2em;
+    font-size: 700;
     color: white;
     text-decoration: none;
 }
@@ -100,29 +112,62 @@ h5 {
     background-color: rgb(25, 33, 41);
 }
 
-.text {
+#general-information {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#general-information article {
+    width: 320px;
+    padding: 80px 30px;
+}
+
+#general-information .text {
     font-size: 2em;
     font-weight: 100;
-    text-align: center;
+    margin: 15px 0px 50px 0px;
 }
 
 #general-information .link-btn {
     font-family: "Roboto Condensed", sans-serif;
     font-size: 2em;
     letter-spacing: 0.5px;
-    text-align: center;
     color: white;
     text-decoration: none;
     background-color: rgb(67, 163, 230);
+    padding: 20px 50px;
+}
+
+#structure h3 {
+    margin-top: 80px;
+}
+
+#structure #structure-box {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #structure .service-box {
     font-size: 1.7em;
     text-align: center;
+    border: 1px solid #e7e7e7;
+    border-radius: 20px 20px;
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1);
+    width: 340px;
+    padding: 25px 60px;
+    margin: 50px 90px;
 }
 
 #structure .service-box img {
     width: 125px;
+}
+
+#structure .service-box p {
+    line-height: 1.8em;
+    margin-top: 10px;
 }
 
 #team .section-text {
@@ -147,3 +192,10 @@ h5 {
     font-size: 0.8em;
     font-style: normal;
 }
+
+.footer a {
+    color: rgb(67, 163, 230);
+    text-decoration: none;
+}
+
+
